@@ -49,22 +49,22 @@ DRIVER guides you through six stages from concept to completion:
 
 ## Installation
 
-### Option 1: From Local Folder
-
-```bash
-# In Claude Code
-/plugin marketplace add /path/to/driver-plugin
-/plugin install driver@driver-dev
-```
-
-Restart Claude Code after installing.
-
-### Option 2: From GitHub
+### From GitHub (Recommended)
 
 ```bash
 # In Claude Code
 /plugin marketplace add https://github.com/CinderZhang/driver-plugin
 /plugin install driver@driver-plugin
+```
+
+Restart Claude Code after installing.
+
+### From Local Folder (For Development)
+
+```bash
+# In Claude Code
+/plugin marketplace add /path/to/driver-plugin
+/plugin install driver@driver-dev
 ```
 
 ---
