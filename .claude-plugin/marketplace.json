@@ -2,8 +2,8 @@
   "name": "driver-dev",
   "description": "Local development marketplace for DRIVER plugin",
   "owner": {
-    "name": "Your Name",
-    "email": "your@email.com"
+    "name": "Cinder Zhang",
+    "email": "cinderzhang@gmail.com"
   },
   "plugins": [
     {
@@ -12,8 +12,8 @@
       "version": "1.0.0",
       "source": "./",
       "author": {
-        "name": "Your Name",
-        "email": "your@email.com"
+        "name": "Cinder Zhang",
+        "email": "cinderzhang@gmail.com"
       }
     }
   ]

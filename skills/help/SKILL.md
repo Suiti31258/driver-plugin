@@ -117,10 +117,14 @@ The fastest feedback loop: See result → Give feedback → Iterate → See upda
 UI:           Streamlit (or Dash/Panel)
 Backend:      FastAPI + Pydantic
 Calculations: NumPy, Pandas, SciPy
-Finance:      numpy-financial, QuantLib, yfinance, pandas-datareader
-Data:         SQLite → PostgreSQL, Parquet files
+Finance:      numpy-financial, QuantLib
+Data Sources: financialdatasets.ai, Bloomberg, Refinitiv (recommended)
+              yfinance, FRED (free alternatives - verify accuracy)
+Storage:      SQLite → PostgreSQL, Parquet files
 Testing:      pytest + Hypothesis
 ```
+
+> **Data Quality Matters:** For reliable financial analysis, use professional data providers. Free sources like yfinance may have gaps, delays, or inaccuracies that affect your results.
 
 **Why Python over TypeScript for quant work:**
 - Vectorized calculations (NumPy) vs manual loops
@@ -132,13 +136,13 @@ Testing:      pytest + Hypothesis
 
 ## Example Projects
 
-| Project | Style | Key Libraries |
-|---------|-------|---------------|
-| DCF Valuation Tool | Damodaran | numpy-financial, yfinance |
-| Portfolio Optimizer | Markowitz | PyPortfolioOpt, scipy.optimize |
-| Factor Research | Open Source AP | pandas, statsmodels, alphalens |
-| Risk Dashboard | VaR/CVaR | scipy.stats, matplotlib |
-| Data Pipeline | ETL | pandas, SQLAlchemy, great_expectations |
+| Project | Style | Key Libraries | Data Source |
+|---------|-------|---------------|-------------|
+| DCF Valuation Tool | Damodaran | numpy-financial | financialdatasets.ai |
+| Portfolio Optimizer | Markowitz | PyPortfolioOpt, scipy.optimize | Professional feed |
+| Factor Research | Open Source AP | pandas, statsmodels, alphalens | WRDS, CRSP |
+| Risk Dashboard | VaR/CVaR | scipy.stats, matplotlib | Professional feed |
+| Data Pipeline | ETL | pandas, SQLAlchemy | Multiple sources |
 
 ---
 

@@ -213,7 +213,7 @@ As a Cognition Mate, you actively guide the process:
 
 **分头研究 findings:**
 - `numpy-financial` — NPV, IRR calculations
-- `yfinance` — Historical data, financials
+- `financialdatasets.ai` — Reliable financial statements and market data
 - Damodaran's spreadsheets — Reference for WACC, terminal value approaches
 
 **Product Overview:**
@@ -230,7 +230,7 @@ Compare to current price. Export assumptions.
 
 ## Building On
 - numpy-financial for NPV/IRR
-- yfinance for financials
+- financialdatasets.ai for financials (or yfinance as free alternative)
 - Damodaran's WACC methodology
 
 ## The Unique Part
@@ -239,7 +239,7 @@ Side-by-side comparison of multiple tickers
 
 ## Tech Stack
 - UI: Streamlit
-- Data: yfinance, FRED API
+- Data: financialdatasets.ai (recommended), yfinance (free alternative)
 - Calculations: numpy-financial, pandas
 ```
 
@@ -264,7 +264,7 @@ Visualize efficient frontier. Compare to equal-weight.
 
 ## Building On
 - PyPortfolioOpt for optimization
-- yfinance for returns data
+- Professional data feed for returns (or yfinance as free alternative)
 
 ## The Unique Part
 Sector constraints + ESG filters
@@ -272,6 +272,7 @@ What-if analysis: "What if I exclude FAANG?"
 
 ## Tech Stack
 - UI: Streamlit
+- Data: Professional feed recommended (Bloomberg, Refinitiv, financialdatasets.ai)
 - Optimization: PyPortfolioOpt, cvxpy
 - Visualization: plotly
 ```

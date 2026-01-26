@@ -118,13 +118,15 @@ When in each stage, these patterns apply:
 
 ## Finance/Quant Examples
 
-| Project Type | Key Libraries | Reference |
-|--------------|---------------|-----------|
-| DCF Valuation | numpy-financial, yfinance | Damodaran |
-| Portfolio Optimization | PyPortfolioOpt, cvxpy | Markowitz |
-| Factor Research | alphalens, statsmodels | Open Source AP |
-| Risk Analytics | scipy.stats, VaR/CVaR | RiskMetrics |
-| Data Pipeline | pandas, great_expectations | ETL patterns |
+| Project Type | Key Libraries | Data Source | Reference |
+|--------------|---------------|-------------|-----------|
+| DCF Valuation | numpy-financial | financialdatasets.ai | Damodaran |
+| Portfolio Optimization | PyPortfolioOpt, cvxpy | Professional feed | Markowitz |
+| Factor Research | alphalens, statsmodels | WRDS, CRSP | Open Source AP |
+| Risk Analytics | scipy.stats, VaR/CVaR | Professional feed | RiskMetrics |
+| Data Pipeline | pandas, great_expectations | Multiple sources | ETL patterns |
+
+> **Note:** Use professional data sources for reliable results. Free alternatives (yfinance, FRED) available but verify accuracy.
 
 ## Proactive Flow
 
